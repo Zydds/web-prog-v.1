@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Bandung Museum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header" id="header">
+        <nav>
+            <a href="index.html"><img src="asset1/geov1.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="collection.php">COLLECTION</a></li>
+                    <li><a href="#history">HISTORY</a></li>
+                    <li><a href="#collaboration">COLLABORATION</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>- Geo Bandung Museum -</h1>
+            <p>Kota Bandung adalah ibu kota yang sekaligus menjadi pusat pemerintahan dan perekonomian dari provinsi Jawa Barat, Indonesia.
+                Terletak 140 km di sebelah tenggara Jakarta, Bandung merupakan kota terbesar di bagian selatan pulau Jawa.
+                Secara geologis Kota Bandung berada di Cekungan Bandung yang dikelilingi oleh Gunung Berapi yang masih aktif 
+                dan berada di antara tiga daerah sumber gempa bumi yang saling melingkup. Kami melindungi sekaligus
+                mendokumentasi kekayaan geologis kota Bandung ini.
+                </p>
+                <a href="https://maps.app.goo.gl/URY31dz1gyyQPHL97" target="_blank"  class="hero-btn">Visit Us</a>
+        </div>
+    </section>
+
+
+
+
+<!--Collection-->
+<section class="collection" id="collection">
+    <h1>Check our Collection</h1>
+    <a href="collection.php" class="go-btn">Go!</a>
+</section>
+
+
+
+
+<!------History----->
+<section class="history" id="history">
+    <h1>History of Us</h1>
+    <br>
+    <p>
+        Museum Geo Bandung didirikan pada tahun 1989 
+        dan merupakan salah satu museum tertua di Indonesia yang mengkhususkan diri dalam ilmu geologi.
+    </p>
+    <br>
+    <div class="row"> 
+        <div class="history-col">
+            <h3>1989</h3>
+            <p>
+                Pada tahun 1989, didirikanlah Museum Geo Bandung sebagai inisiatif untuk mempertahankan dan memamerkan kekayaan alam geologis Bandung, Indonesia, dan Dunia.
+                Museum ini sejak itu telah menjadi pusat edukasi dan penelitian tentang ilmu bumi di wilayah tersebut.
+            </p>
+        </div>
+        <div class="history-col">
+            <h3>1997</h3>
+            <p>
+                Pada tahun 1995, Museum Geologi di Kota Bandung merayakan ulang tahunnya yang ke-8 dengan menggelar pameran khusus bertajuk "Ratapan Batu: Perjalanan Sejarah Bumi."
+                Pameran ini menampilkan koleksi langka dari seluruh penjuru dunia, termasuk fosil-fosil unik dan batuan berusia jutaan tahun. 
+            </p>
+        </div>
+        <div class="history-col">
+            <h3>2011</h3>
+            <p>
+                Museum Geo Bandung mendapat penghargaan prestisius "Pusat Konservasi Geologi Terbaik" dari Organisasi Internasional untuk Konservasi Sumber Daya Alam. 
+                Penghargaan ini diberikan sebagai pengakuan atas dedikasi museum dalam melestarikan warisan geologi Indonesia.
+            </p>
+        </div>
+    </div>
+    <br>
+</section>
+
+
+<!---Collaboration---->
+
+<section class="collab" id="collaboration">
+    <h1>Kolaborasi</h1>
+    <p>kami juga berkolaborasi dengan</p>
+
+    <div class="row">
+        <div class="collab-col">
+            <img src="asset1/natgeo.png">
+            <div class="layer">
+            </div>
+        </div>
+        <div class="collab-col">
+            <img src="asset1/esdm.png" style="transform:scale(0.8);">
+            <div class="layer">
+
+            </div>
+        </div>
+        <div class="collab-col">
+            <img src="asset1/bmkg.png" style="transform:scale(0.6);">
+            <div class="layer">
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="footer" id="contact">
+    <h4>Contact Us</h4>
+    <br>
+    <p>geo-bdg@gmail.co.id</p>
+
+</section>
+
+    <!-------JS------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

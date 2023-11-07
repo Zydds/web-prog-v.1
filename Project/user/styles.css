@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(asset1/museum.jpg);
+    background-position: center;
+    background-size: cover;
+    position : relative;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+nav img {
+    width: 200px;
+}
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #F97A5F;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    margin-top: 20px;
+}
+.hero-btn:hover{
+    background: #F97A5F;
+    transition: 0.5s;
+}
+
+nav .fa {
+    display: none;
+}
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 17px;
+        text-align: left;
+        margin-top: 13px;
+    }
+    .text-box p {
+        font-size: 13px;
+        text-align: left;
+        margin-top: 13px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #E13C18 ;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+.text-box h1 {
+    font-size: 30px;
+    text-align: left;
+    margin-top: 13px;
+}
+.text-box p {
+    text-align: left;
+    margin-top: 13px;
+}
+/*collection*/
+.collection {
+    margin-right: 20px;
+    margin:auto;
+    display: block;
+    background-color: #000000;
+    color: #ffffff;
+    height: 120px;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+    padding-top: 9px;
+}
+.go-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    margin-top: 10px;
+}
+.go-btn:hover{
+    background: #F97A5F;
+    transition: 0.5s;
+}
+/* History */
+.history {
+    color: #fff;
+    width: 100%;
+    height: 95%;
+    text-align: center;
+    padding-top: 100px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(asset1/lembang.jpg);
+    background-position: center;
+    background-size: cover;
+    position : relative;
+}
+.h1 {
+
+    font-size: 35px;
+    font-weight: 600;
+}
+.p {
+    margin-top: 10px;
+    color: #777;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+.row p {
+    font-size: 14px;
+    padding: 10px;
+    flex: 1;
+    margin: 0 2px; /* Optional spacing between paragraphs */
+}
+.history-col {
+    color: #000000;
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.history-col {
+    flex: 1;
+    margin: 0 5px;
+    border: 3px solid #000000;
+    padding: 0;
+}
+.history-col:hover {
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.6);
+    transition: 0.5;
+}
+h3 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*Collab*/
+.collab {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.collab-col {
+    display: block;
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.layer {
+    color: #fff;
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    display: flex;
+}
+.collab-col img {
+    width: 100%;
+}
+.collab-col:hover {
+    background: rgba(255, 255, 255, 0.6)
+}
+.footer {
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(asset1/trex2.jpg);
+    background-position: center;
+    background-size: cover;
+    position : relative;
+}
+.footer h4 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-weight: 200px;
+}
